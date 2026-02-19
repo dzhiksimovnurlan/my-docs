@@ -1,0 +1,52 @@
+site_name: Apprix Документация
+site_description: Документация по проектам Apprix
+site_url: https://mydomain.org/mysite
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Переключить тему
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Переключить тему
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Главная: index.md
+  - Phone Cleaner Plus:
+    - Обзор: phone-cleaner-plus/index.md
+    - Техническая настройка: phone-cleaner-plus/setup.md
+    - Руководство пользователя: phone-cleaner-plus/user-guide.md
+  - Админка Google Ads:
+    - Обзор: admin-google-ads/index.md
+    - Техническая настройка: admin-google-ads/setup.md
+    - Руководство пользователя: admin-google-ads/user-guide.md
