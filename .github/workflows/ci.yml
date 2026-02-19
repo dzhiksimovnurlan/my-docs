@@ -1,29 +1,46 @@
+# Деплой на сервер при push в master/main.
+# 1. Создать ключ: ssh-keygen -m PEM -t rsa -b 4096 -N "" -f deploy_key
+# 2. Публичный ключ на сервер: ssh-copy-id -i deploy_key.pub root@15.204.140.96
+# 3. GitHub Secrets: SSH_PRIVATE_KEY, DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH
+#
 name: ci
 on:
   push:
     branches:
       - master
       - main
-permissions:
-  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: mkdocs-${{ hashFiles('mkdocs.yml') }}
           path: .cache
           restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+            mkdocs-
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy to server
+        uses: easingthemes/ssh-deploy@v4
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
+          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+          ARGS: "-avzr --delete"
+          SOURCE: "site/"
+          TARGET: ${{ secrets.DEPLOY_PATH }}
+          SCRIPT_BEFORE: "ls"
