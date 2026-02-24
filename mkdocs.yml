@@ -49,5 +49,5 @@ nav:
   - Админка Google Ads:
     - Обзор: admin-google-ads/index.md
     - Техническая настройка: admin-google-ads/setup.md
-    -Админка: admin-google-ads/admin.md
-    -Расходы: admin-google-ads/costs.md
+    - Админка: admin-google-ads/admin.md
+    - Расходы (косты): admin-google-ads/costs.md
