@@ -36,4 +36,11 @@ https://goyda.dev/admin/google_ads_spend/conversionaction/
 ![Конверсии](images/admin/3.png)
 
 
+Логи конверсий
+
+https://goyda.dev/admin/google_ads_spend/conversionlog/
+
+Просмотр логов конверсий, можно отфильтровать по каждому приложению
+
+![Логи конверсий](images/admin/4.png)
 
