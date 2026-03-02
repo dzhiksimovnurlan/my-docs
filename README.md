@@ -4,17 +4,12 @@
 cd ~/my-docs
 ```
 
-2. Устанавливаем  http-server (скачал установил Node.js):
-
-```bash
-npm install -g http-server
+2. Проверяем установлен ли Pyhton
 ```
 
-3. Запускаем сервер:
+3. Запускаем встроенный http сервер:
 
-```bash
-http-server .
-```
+python3 -m http.server 8080
 
 4. Открываем в браузере по адресу:
 
