@@ -1,6 +1,6 @@
 # Руководство пользователя — Админка Google Ads
 
-https://goyda.dev/admin/
+[https://goyda.dev/admin/](https://goyda.dev/admin/)
 
 Логин, пароль домена выдаётся по запросу
 
@@ -20,7 +20,7 @@ https://goyda.dev/admin/
 
 1. Приложения Google Ads
 
-https://goyda.dev/admin/google_ads_spend/googleadsapplication/
+[https://goyda.dev/admin/google_ads_spend/googleadsapplication/](https://goyda.dev/admin/google_ads_spend/googleadsapplication/)
 
 Здесь можно отредактировать существующие приложения (поменять креды, сурс и т.п.)
 и добавить новое приложение (оно автоматически будет включено в отправку расходов и конверсий)
@@ -29,7 +29,7 @@ https://goyda.dev/admin/google_ads_spend/googleadsapplication/
 
 2. Действия конверсий
 
-https://goyda.dev/admin/google_ads_spend/conversionaction/
+[https://goyda.dev/admin/google_ads_spend/conversionaction/](https://goyda.dev/admin/google_ads_spend/conversionaction/)
 
 Здесь добавляются конверсии из гугла под каждое приложение, или редактируются существующие
 
@@ -38,7 +38,7 @@ https://goyda.dev/admin/google_ads_spend/conversionaction/
 
 Логи конверсий
 
-https://goyda.dev/admin/google_ads_spend/conversionlog/
+[https://goyda.dev/admin/google_ads_spend/conversionlog/](https://goyda.dev/admin/google_ads_spend/conversionlog/)
 
 Просмотр логов конверсий, можно отфильтровать по каждому приложению
 

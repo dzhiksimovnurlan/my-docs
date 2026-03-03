@@ -1,0 +1,5 @@
+/* Ограничение ширины колонки Value в таблицах DNS */
+.md-typeset table td:nth-child(3) {
+  word-break: break-all;
+  max-width: 280px;
+}

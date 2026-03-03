@@ -4,7 +4,7 @@
 
 Главная:
 
-https://goyda.dev/google-ads/
+[https://goyda.dev/google-ads/](https://goyda.dev/google-ads/)
 
 ![Главная](images/costs/1.png)
 
@@ -12,7 +12,7 @@ https://goyda.dev/google-ads/
 
 1. Выгрузка
 
-https://goyda.dev/google-ads/export/
+[https://goyda.dev/google-ads/export/](https://goyda.dev/google-ads/export/)
 
 Здесь можно сделать выгрузку расходов вручную (необходимо при повторной отправки если возникли какие-то ошибки в автоматической выгрузке или были обновления в приложении)
 
@@ -22,7 +22,7 @@ https://goyda.dev/google-ads/export/
 
 2. Логи
 
-https://goyda.dev/google-ads/logs/
+[https://goyda.dev/google-ads/logs/](https://goyda.dev/google-ads/logs/)
 
 Просмотр логов расходов
 

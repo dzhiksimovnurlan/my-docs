@@ -111,12 +111,12 @@ DEBUG=False
 
 ### Настройка Stripe
 
-1. **API ключи**: Получите в [Stripe Dashboard](https://dashboard.stripe.com/apikeys)
-2. **Webhook**: Создайте endpoint в [Stripe Webhooks](https://dashboard.stripe.com/webhooks)
+1. **API ключи**: Получите в [https://dashboard.stripe.com/apikeys](https://dashboard.stripe.com/apikeys)
+2. **Webhook**: Создайте endpoint в [https://dashboard.stripe.com/webhooks](https://dashboard.stripe.com/webhooks)
    - URL: `https://yourdomain.com/api/stripe/webhook`
    - События: `customer.subscription.created`, `invoice.paid`
 3. **Price ID**: Создайте продукт и цену в Stripe Dashboard
-4. **Apple Pay**: Настройте домен в [Stripe Settings](https://dashboard.stripe.com/settings/payment_methods)
+4. **Apple Pay**: Настройте домен в [https://dashboard.stripe.com/settings/payment_methods](https://dashboard.stripe.com/settings/payment_methods)
 
 ## Основные файлы
 
