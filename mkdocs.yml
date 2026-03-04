@@ -2,6 +2,9 @@ site_name: Apprix Документация
 site_description: Документация по проектам Apprix
 site_url: https://mydomain.org/mysite
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   language: ru
@@ -51,3 +54,6 @@ nav:
     - Техническая настройка: admin-google-ads/setup.md
     - Админка: admin-google-ads/admin.md
     - Расходы (косты): admin-google-ads/costs.md
+  - Почтовый сервер Modoboa:
+    - Настройка доменных записей: modoboa-mailbox/setup_dns_records.md
+    - Создание почтовых ящиков: modoboa-mailbox/create_mailbox.md
